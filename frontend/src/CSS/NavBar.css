@@ -1,0 +1,48 @@
+.head{
+    font-size: 400%;
+    color: aliceblue;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 150%;
+    color: aliceblue;
+    padding-bottom: 15%;
+    text-align: center;
+    word-spacing: 0.5em;
+
+    position: relative;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(50deg, #fff, #000, #fff);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    90% {
+        background-position: 500%;
+    }
+    10% {
+        background-position: -500%;
+    }
+}
+
+.rotateImage{
+    width: 15%;
+    animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
